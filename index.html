@@ -124,7 +124,7 @@ body {
 		<ul data-role="listview">
 			<li><a href="#como_participar" data-transition="slidedown">COMO PARTICIPAR</a></li>
             <li><a href="#cidades_atendidas" data-transition="flip">CIDADES ATENDIDAS</a></li>
-			<li><a href="#page4" data-transition="flip">CADASTRAR CUPOM</a></li>
+			<li><a href="#cadastrar_cupom" data-transition="flip">CADASTRAR CUPOM</a></li>
             <li><a href="#page5" data-transition="flip">QUIZ DA ECONOMIA</a></li>
 		</ul>		
 	</div>
@@ -150,7 +150,7 @@ body {
     <div data-role="footer">
     <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-home" style="width:20%">Home</a>
 <h1><br><br></h1>
-    <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-edit" style="width:20%">Cadastrar</a>
+    <a href="#cadastrar_cupom" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-edit" style="width:20%">Cadastrar</a>
 </div>
 </div>
 
@@ -199,6 +199,12 @@ body {
             <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-inline"></a>
             É prevista uma economia de XXX kWh. O suficiente para o abastecimento de XXX residências.
         </div>
+        <br>
+        <div data-role="navbar">
+        <ul>
+            <li><a href="#cadastrar_cupom" data-icon="star" class="ui-btn-active">Cadastrar aqui</a></li>
+        </ul>
+    </div><!-- /navbar -->
  	</div>      	
 	<div data-role="footer" data-position="fixed">
     <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-home" style="width:20%">Home</a>
@@ -207,20 +213,69 @@ body {
 </div>
 
 <div data-role="page" id="cadastrar_cupom">
-	<div data-role="header">
-		<h1>Página quatro</h1>
+	<div data-role="header" data-position="fixed">
+		<h1>Bônus da Concessionária</h1>
+        <a href="#" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
 	</div>
 	<div data-role="content">	
-		Conteúdo		
+		<h5 class="ui-bar ui-bar-a ui-corner-all">CADASTRAR CUPOM:</h5>
+        <div class="ui-body ui-body-a ui-corner-all" style="text-align:justify">
+        	<label for="text-basic">Cidade:</label>
+			<input name="text-basic" id="text-basic" value="" type="text">
+            <label for="text-basic">Nome:</label>
+			<input name="text-basic" id="text-basic" value="" type="text">
+            <label for="text-basic">UC:</label>
+			<input name="text-basic" id="text-basic" value="" type="text">
+            <h4>Quantidade de lâmpadas que deseja substituir:</h4>
+            <label for="slider">40 Watts:</label>
+			<input name="slider" id="slider" value="1" min="0" max="5" type="range">
+            <label for="slider">60 Watts:</label>
+			<input name="slider" id="slider" value="1" min="0" max="5" type="range">
+            <label for="slider">100 Watts:</label>
+			<input name="slider" id="slider" value="1" min="0" max="5" type="range">
+        </div>
+        <br>
+        <ul data-role="listview">
+			<li><a href="#finalizar" data-transition="slidedown">Finalizar Cadastro</a></li>
+		</ul>
+        <br>	
 	</div>
 	<div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-            <ul>
-                <li><a href="#home" data-icon="home" data-transition="flip">Home</a></li>
-            </ul>
-        </div><!-- /navbar -->
-	</div>
+    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-home" style="width:20%">Home</a>
+<h1><br><br></h1>
 </div>
+
+
+<div data-role="page" id="finalizar" data-dialog="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Bônus da Concessionária</h1>
+	</div>
+	<div data-role="content">
+    	<h5 class="ui-bar ui-bar-a ui-corner-all">PARABÉNS!</h5>	
+        <div class="ui-body ui-body-a ui-corner-all" style="text-align:justify">
+        	<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-check ui-btn-icon-notext ui-btn-inline"></a>
+        	Para efetuar a substituição, didrija-se ao posto de troca abaixo e informe o número de cupom.
+            <br>
+            <div class="ui-body ui-body-a ui-corner-all" style="text-align:justify">
+            	Posto de Troca:
+                <br>
+                <p>Endereço: Praça xxxx</p>
+                <p>Horário xxx a xxx</p>
+                <p>Entre as dias xxx a xxx</p>
+            </div>
+            <br>
+            <div class="ui-body ui-body-a ui-corner-all" style="text-align:justify">
+            	Cupom:
+                <br>
+                <p>xxxx</p>
+            </div>
+      	</div>	
+	</div>
+    <div data-role="footer">
+    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-home" style="width:20%">Home</a>
+<h1><br><br></h1>
+</div>
+
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="swiper/dist/idangerous.swiper.min.js" type="text/javascript"></script>
 <script>
