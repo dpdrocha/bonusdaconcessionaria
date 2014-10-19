@@ -121,7 +121,7 @@ body {
       </div>
       <br>	
 		<ul data-role="listview">
-			<li><a href="#como_participar" data-transition="flip">COMO PARTICIPAR</a></li>
+			<li><a href="#como_participar" data-transition="slidedown">COMO PARTICIPAR</a></li>
             <li><a href="#cidades_atendidas" data-transition="flip">CIDADES ATENDIDAS</a></li>
 			<li><a href="#page4" data-transition="flip">CADASTRAR CUPOM</a></li>
             <li><a href="#page5" data-transition="flip">QUIZ DA ECONOMIA</a></li>
@@ -129,32 +129,33 @@ body {
 	</div>
 </div>
 
-<div data-role="page" id="como_participar">
+<div data-role="page" id="como_participar" data-dialog="true">
 	<div data-role="header" data-position="fixed">
 		<h1>Bônus da Concessionária</h1>
-        <a href="#" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
 	</div>
 	<div data-role="content">
     	<h5 class="ui-bar ui-bar-a ui-corner-all">COMO PARTICIPAR:</h5>	
-        <div class="ui-body ui-body-a ui-corner-all">
-        	<p>Os clientes residenciais da área de concessão da AES Sul poderão substituir até 5 lâmpadas incandescentes por fluorescentes compactas.</p>
-            <p>É muito fácil: depois de fazer o cadastro no sistema, é só você se dirigir com as lâmpadas incandescentes ao endereço do posto de troca, em seu município, no prazo definido.</p>
-			<p>As lâmpadas incandescentes que não atendam a níveis mínimos de eficiência energética, não podem mais ser produzidas ou importadas pelo Brasil e serão totalmente retiradas do mercado até 30 de junho de 2015.</p>
+        <div class="ui-body ui-body-a ui-corner-all" style="text-align:justify">
+        	<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-check ui-btn-icon-notext ui-btn-inline"></a>
+        	Os clientes residenciais da área de concessão da AES Sul poderão substituir até 5 lâmpadas incandescentes por fluorescentes compactas.
+            <br>
+            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+            É muito fácil: depois de fazer o cadastro no sistema, é só você se dirigir com as lâmpadas incandescentes ao endereço do posto de troca, em seu município, no prazo definido.
+            <br>
+            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-alert ui-btn-icon-notext ui-btn-inline"></a>
+			As lâmpadas incandescentes que não atendam a níveis mínimos de eficiência energética, não podem mais ser produzidas ou importadas pelo Brasil e serão totalmente retiradas do mercado até 30 de junho de 2015.
       	</div>	
 	</div>
-	<div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-            <ul>
-                <li><a href="#home" data-icon="home" data-transition="flip">Home</a></li>
-            </ul>
-        </div><!-- /navbar -->
-	</div>
+    <div data-role="footer">
+    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-home" style="width:20%">Home</a>
+<h1><br><br></h1>
+    <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-edit" style="width:20%">Cadastrar</a>
+</div>
 </div>
 
-<div data-role="page" id="cidades_atendidas">
+<div data-role="page" id="cidades_atendidas" data-dialog="true">
 	<div data-role="header" data-position="fixed">
 		<h1>Bônus da Concessionária</h1>
-        <a href="#" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
 	</div>
 	<div data-role="content">	
 		<h5 class="ui-bar ui-bar-a ui-corner-all">CIDADES ATENDIDAS:</h5>
@@ -174,28 +175,37 @@ body {
         </ul>
         	
 	</div>
-	<div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-            <ul>
-                <li><a href="#home" data-icon="home" data-transition="flip">Home</a></li>
-            </ul>
-        </div><!-- /navbar -->
-	</div>
+	<div data-role="footer">
+    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-home" style="width:20%">Home</a>
+<h1><br><br></h1>
+</div>
 </div>
 
 <div data-role="page" id="porto_alegre">
-	<div data-role="header">
-		<h1>Página quatro</h1>
+	<div data-role="header" data-position="fixed">
+		<h1>Bônus da Concessionária</h1>
+        <a href="#" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
 	</div>
 	<div data-role="content">	
-		Conteúdo		
-	</div>
-	<div data-role="footer">
-		<h4>Rodapé da página</h4>
-	</div>
+		<h5 class="ui-bar ui-bar-a ui-corner-all">PORTO ALEGRE:</h5>
+        <div class="ui-body ui-body-a ui-corner-all" style="background-image:url(imagens/item1.png); background-size:cover; background-repeat:no-repeat; min-height: 280px; text-align:justify">
+        </div>
+        <br>
+         <div class="ui-body ui-body-a ui-corner-all" style="text-align:justify">
+         	<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-recycle ui-btn-icon-notext ui-btn-inline"></a>
+         	A maior cidade do estado do Rio Grande do Sul tem como meta a substituição de XXX lâmpadas.
+            <br>
+            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-inline"></a>
+            É prevista uma economia de XXX kWh. O suficiente para o abastecimento de XXX residências.
+        </div>
+ 	</div>      	
+	<div data-role="footer" data-position="fixed">
+    <a href="#home" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-home" style="width:20%">Home</a>
+<h1><br><br></h1>
+</div>
 </div>
 
-<div data-role="page" id="page4">
+<div data-role="page" id="cadastrar_cupom">
 	<div data-role="header">
 		<h1>Página quatro</h1>
 	</div>
@@ -214,12 +224,11 @@ body {
 <script src="swiper/dist/idangerous.swiper.min.js" type="text/javascript"></script>
 <script>
 	jQuery().ready(function(){
-	 var mySwiper = new Swiper('.swiper-container',{ 
-    pagination: '.pagination',
-    paginationClickable: true
-  })
-});
- 
+		var mySwiper = new Swiper('.swiper-container',{ 
+		pagination: '.pagination',
+		paginationClickable: true
+  		})
+	});
   </script>
 </body>
 </html>
