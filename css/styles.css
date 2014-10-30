@@ -171,16 +171,11 @@ a.splash-arrow:hover {
 }
 
 p{
-	font-size: x-large;
     font-stretch: extra-expanded;
     padding: 1% 3%;
 	line-height: initial;
 }
 
-.titulo1{
-	font-size: xx-large;
-	padding-bottom: 15px;
-}
 
 .logo{
 	height: 100%;
@@ -206,17 +201,11 @@ p{
 	height: 40%;
 }
 
+.span30{
+	height: 30%;
+}
+
 .span100{
-	height: 100%;
-}
-
-.input{
-	width: 57%;
-	float: left;
-	text-align: right;
-}
-
-.verificacao{
 	height: 100%;
 }
 
@@ -228,8 +217,6 @@ p{
 }
 .botao{
 	height: 100%;
-    float: left;
     text-align: left;
-	padding: 1px 20px;
 }
 
