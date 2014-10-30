@@ -79,6 +79,7 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
+	overflow: scroll;
 }
 
 a { color: #333; text-decoration: none; }
