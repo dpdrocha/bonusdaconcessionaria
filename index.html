@@ -15,6 +15,7 @@
 	function escondeInput(){
 		$('#input_primario').hide();
 		$('#input_secundario').slideDown();
+		$('#input_sec').focus();
 	}
 </script>
 <body id="index">
@@ -32,7 +33,7 @@
 		</div>
 		<div class="span20" id="input_secundario" style="display: none;">
 			<div class="input">
-				<input type="number" placeholder="Digite aqui a sua UC" onfocus="escondeInput();">
+				<input type="number" placeholder="Digite aqui a sua UC" id="input_sec">
 			</div>
 			<a href="quantidade.html"><img src="img/right-arrow.png" alt="" /></a>
 		</div>
@@ -53,7 +54,7 @@
 		</div>
 		<div class="span20" id="input_primario">
 			<div class="input">
-				<input type="number" placeholder="Digite aqui a sua UC" onfocus="escondeInput();">
+				<input onfocus="escondeInput()" type="number" placeholder="Digite aqui a sua UC">
 			</div>
 			<a href="quantidade.html"><img src="img/right-arrow.png" alt="" /></a>
 		</div>
