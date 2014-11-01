@@ -11,11 +11,101 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <script type="text/javascript">
-	function chegou(){
-		alert("Chegou.");
+	function aumenta40(){
+		var l40w = parseInt($('#40w h5').html());
+		var l60w = parseInt($('#60w h5').html());
+		var l100w = parseInt($('#100w h5').html())
+		var total = l40w + l60w + l100w;
+		
+		if(total < 5){
+			l40w++;
+			total++;
+			$('#40w h5').html(l40w);
+			$('#total h5').html(total);
+		}
+		else
+			alert("Número máximo de 5 lâmpadas atingido.");
+		
+	}
+	function diminui40(){
+		var l40w = parseInt($('#40w h5').html());
+		var l60w = parseInt($('#60w h5').html());
+		var l100w = parseInt($('#100w h5').html())
+		var total = l40w + l60w + l100w;
+		
+		if(total > 0 && l40w > 0){
+			l40w--;
+			total--;
+			$('#40w h5').html(l40w);
+			$('#total h5').html(total);
+		}
+		else
+			alert("Número mínimo de lâmpadas atingido.");
+	}
+	function aumenta60(){
+		var l40w = parseInt($('#40w h5').html());
+		var l60w = parseInt($('#60w h5').html());
+		var l100w = parseInt($('#100w h5').html())
+		var total = l40w + l60w + l100w;
+		
+		if(total < 5){
+			l60w++;
+			total++;
+			$('#60w h5').html(l60w);
+			$('#total h5').html(total);
+		}
+		else
+			alert("Número máximo de 5 lâmpadas atingido.");
+		
+	}
+	function diminui60(){
+		var l40w = parseInt($('#40w h5').html());
+		var l60w = parseInt($('#60w h5').html());
+		var l100w = parseInt($('#100w h5').html())
+		var total = l40w + l60w + l100w;
+		
+		if(total > 0 && l60w > 0){
+			l60w--;
+			total--;
+			$('#60w h5').html(l60w);
+			$('#total h5').html(total);
+		}
+		else
+			alert("Número mínimo de lâmpadas atingido.");
+	}
+	function aumenta100(){
+		var l40w = parseInt($('#40w h5').html());
+		var l60w = parseInt($('#60w h5').html());
+		var l100w = parseInt($('#100w h5').html())
+		var total = l40w + l60w + l100w;
+		
+		if(total < 5){
+			l100w++;
+			total++;
+			$('#100w h5').html(l100w);
+			$('#total h5').html(total);
+		}
+		else
+			alert("Número máximo de 5 lâmpadas atingido.");
+		
+	}
+	function diminui100(){
+		var l40w = parseInt($('#40w h5').html());
+		var l60w = parseInt($('#60w h5').html());
+		var l100w = parseInt($('#100w h5').html())
+		var total = l40w + l60w + l100w;
+		
+		if(total > 0 && l100w > 0){
+			l100w--;
+			total--;
+			$('#100w h5').html(l100w);
+			$('#total h5').html(total);
+		}
+		else
+			alert("Número mínimo de lâmpadas atingido.");
 	}
 </script>
-<body>
+<body id="quandidade">
 	<div class="wrapper">
 		<div class="span5">
 		</div>
@@ -47,26 +137,26 @@
 				  </tr>
 				  <tr class="linha">
 				    <th scope="row">Incandescente de 40W</th>
-				    <td class="selecionador_esquerda">-</td>
-				    <td>0</td>
-				    <td class="selecionador_direita" onclick="chegou();">+</td>
+				    <td class="selecionador_esquerda" onclick="diminui40();">-</td>
+				    <td id="40w"><h5>0</h5></td>
+				    <td class="selecionador_direita" onclick="aumenta40();">+</td>
 				  </tr>
 				  <tr class="linha">
 				    <th scope="row">Incandescente de 60W</th>
-				   <td class="selecionador_esquerda">-</td>
-				    <td>0</td>
-				    <td class="selecionador_direita" onclick="chegou();">+</td>
+				   <td class="selecionador_esquerda" onclick="diminui60();">-</td>
+				    <td id="60w"><h5>0</h5></td>
+				    <td class="selecionador_direita" onclick="aumenta60();">+</td>
 				  </tr>
 				  <tr class="linha">
 				    <th scope="row">Incandescente de 100W</th>
-				    <td class="selecionador_esquerda">-</td>
-				    <td>0</td>
-				    <td class="selecionador_direita" onclick="chegou();">+</td>
+				    <td class="selecionador_esquerda" onclick="diminui100();">-</td>
+				    <td id="100w"><h5>0</h5></td>
+				    <td class="selecionador_direita"onclick="aumenta100();">+</td>
 				  </tr>
 				  <tr class="linha">
 				    <th scope="row">TOTAL</th>
 				    <td>&nbsp;</td>
-				    <td>3</td>
+				    <td id="total"><h5>0</h5></td>
 				    <td>&nbsp;</td>
 				  </tr>
 				</table>
