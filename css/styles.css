@@ -189,20 +189,32 @@ p{
 	padding: 5px 20px;
 }
 
+.span5{
+	height: 5%;
+}
+
 .span10{
 	height: 10%;
+}
+
+.span15{
+	height: 15%;
 }
 
 .span20{
 	height: 20%;
 }
 
+.span30{
+	height: 30%;
+}
+
 .span40{
 	height: 40%;
 }
 
-.span30{
-	height: 30%;
+.span50{
+	height: 50%;
 }
 
 .span100{
@@ -218,5 +230,28 @@ p{
 .botao{
 	height: 100%;
     text-align: left;
+}
+
+.tabela{
+	margin: 1%;
+}
+
+table{
+	margin-right:auto; margin-left:auto;
+}
+
+.selecionador_esquerda{
+	font-size: xx-large;
+	text-align: right !important;
+}
+
+.selecionador_direita{
+	font-size: xx-large;
+	text-align: left !important;
+}
+
+.linha{
+	border-bottom: 1px solid;
+    height: 40px;
 }
 
