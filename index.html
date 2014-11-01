@@ -11,11 +11,17 @@
   	<!-- Css principal -->
 	<link rel="stylesheet" href="css/styles.css">
 </head>
+<script type="text/javascript">
+	function escondeInput(){
+		$('#input_primario').hide();
+		$('#input_secundario').slideDown();
+	}
+</script>
 <body id="index">
 	<div class="splash fade-in">
-		<div class="span10">
+		<div class="span20">
 		</div>
-	<div class="span40">
+	<div class="span30">
 		<div class="logo">
 		</div>
 	</div>
@@ -23,6 +29,12 @@
 	</div>
 	<div class="wrapper">
 		<div class="span10">
+		</div>
+		<div class="span20" id="input_secundario" style="display: none;">
+			<div class="input">
+				<input type="number" placeholder="Digite aqui a sua UC" onfocus="escondeInput();">
+			</div>
+			<a href="quantidade.html"><img src="img/right-arrow.png" alt="" /></a>
 		</div>
 		<div class="span30">
 			<div class="logo">
@@ -39,10 +51,10 @@
 			<p>PARTICIPE!
 			</p>
 		</div>
-		<div class="span10">
-			<div class="input"><input type="text" placeholder="Digite aqui a sua UC"></div>
-		</div>
-		<div class="span10">
+		<div class="span20" id="input_primario">
+			<div class="input">
+				<input type="number" placeholder="Digite aqui a sua UC" onfocus="escondeInput();">
+			</div>
 			<a href="quantidade.html"><img src="img/right-arrow.png" alt="" /></a>
 		</div>
 	</div>
