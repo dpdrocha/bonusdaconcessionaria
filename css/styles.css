@@ -179,6 +179,7 @@ a.splash-arrow {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
+	background-color: #008C23;
 }
 
 a.splash-arrow:hover {
