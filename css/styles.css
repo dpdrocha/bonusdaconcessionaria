@@ -254,6 +254,9 @@ p{
 	height: 100%;
 	width: auto;
 }
+.input{
+	margin: 0px 0px 6px 0px;
+}
 .botao{
 	height: 100%;
     text-align: left;
